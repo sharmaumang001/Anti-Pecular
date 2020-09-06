@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "87782178179-pb1csoat3tbim04lijtlfvonp3c5o6qk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sharmaumang.anti_peculator",
+            "certificate_hash": "532f86fc421ba1776a910d8c731d178ad78b2fdc"
+          }
+        },
+        {
           "client_id": "87782178179-ug0equjqouakp0j98u5n5qv2i8p65gdn.apps.googleusercontent.com",
           "client_type": 3
         }
