@@ -1,4 +1,4 @@
-package com.example.antitheft.adapter;
+package com.sharmaumang.anti_peculator.adapter;
 
 import android.Manifest;
 import android.app.Activity;
@@ -50,7 +50,7 @@ public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
 
         holder.tvName.setText("Name:\n"+details.get(position).getName());
        holder.tvCar.setText(details.get(position).getCarNum());

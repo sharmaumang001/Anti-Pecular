@@ -1,4 +1,4 @@
-package com.example.antitheft.activity;
+package com.sharmaumang.anti_peculator.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,8 +19,6 @@ import com.example.antitheft.R;
 
 import com.example.antitheft.adapter.DetailsAdapter;
 import com.example.antitheft.model.Details;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

@@ -1,8 +1,10 @@
-package com.sharmaumang.anti_peculator;
+package com.sharmaumang.anti_peculator.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.antitheft.R;
 
 public class MainActivity extends AppCompatActivity {
 

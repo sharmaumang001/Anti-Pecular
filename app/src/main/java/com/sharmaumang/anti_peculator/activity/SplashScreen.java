@@ -1,4 +1,4 @@
-package com.example.antitheft.activity;
+package com.sharmaumang.anti_peculator.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;

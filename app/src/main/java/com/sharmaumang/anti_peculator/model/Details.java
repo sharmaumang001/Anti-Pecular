@@ -1,4 +1,4 @@
-package com.example.antitheft.model;
+package com.sharmaumang.anti_peculator.model;
 //model class for recycler view
 public class Details
 {

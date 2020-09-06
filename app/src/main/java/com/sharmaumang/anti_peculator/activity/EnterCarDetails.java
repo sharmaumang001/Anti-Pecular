@@ -1,4 +1,4 @@
-package com.example.antitheft.activity;
+package com.sharmaumang.anti_peculator.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,14 +12,12 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+
 import com.example.antitheft.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.bottomappbar.BottomAppBar;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,7 +27,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.Map;
+
 //activity for entering car details
 public class EnterCarDetails extends AppCompatActivity {
 
@@ -64,7 +62,7 @@ public class EnterCarDetails extends AppCompatActivity {
         etModel=findViewById(R.id.et_model);
         btnAdd=findViewById(R.id.btn_details_submit);
 
-        carRef=FirebaseDatabase.getInstance().getReference();
+        carRef= FirebaseDatabase.getInstance().getReference();
 
         auth=FirebaseAuth.getInstance();
         uid=auth.getCurrentUser().getUid();
@@ -142,7 +140,7 @@ public class EnterCarDetails extends AppCompatActivity {
         auth1=FirebaseAuth.getInstance();
         DatabaseReference reference;
         reference=FirebaseDatabase.getInstance().getReference();
-        String id;
+        final String id;
         id=auth1.getCurrentUser().getUid();
         reference.child("Mechanic").addValueEventListener(new ValueEventListener() {
             @Override
