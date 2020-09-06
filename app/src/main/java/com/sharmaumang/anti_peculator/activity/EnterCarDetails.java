@@ -123,6 +123,7 @@ public class EnterCarDetails extends AppCompatActivity {
                                 etNum.setText("");
                             }
                             else {
+                                progressDialog.dismiss();
                                 Toast.makeText(EnterCarDetails.this, "Data not store.. please try again later..", Toast.LENGTH_SHORT).show();
                             }
                         }

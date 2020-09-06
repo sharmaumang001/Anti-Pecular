@@ -101,6 +101,7 @@ public class MechanicDetails extends AppCompatActivity {
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Entering Details....");
+        progressDialog.setCancelable(false);
 
 
 
