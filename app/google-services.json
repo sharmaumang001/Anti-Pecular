@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "87782178179",
+    "firebase_url": "https://anti-pecular.firebaseio.com",
+    "project_id": "anti-pecular",
+    "storage_bucket": "anti-pecular.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87782178179:android:7e96572364226ad26ecab6",
+        "android_client_info": {
+          "package_name": "com.sharmaumang.anti_peculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87782178179-ug0equjqouakp0j98u5n5qv2i8p65gdn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2GfSDz1HrgFpjJzTM_-rtna6DU3gQncE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87782178179-ug0equjqouakp0j98u5n5qv2i8p65gdn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
