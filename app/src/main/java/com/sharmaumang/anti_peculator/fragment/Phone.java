@@ -1,4 +1,4 @@
-package com.example.antitheft.fragment;
+package com.sharmaumang.anti_peculator.fragment;
 
 import android.os.Bundle;
 

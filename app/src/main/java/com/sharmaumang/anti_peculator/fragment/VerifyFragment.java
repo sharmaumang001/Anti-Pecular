@@ -1,4 +1,4 @@
-package com.example.antitheft.fragment;
+package com.sharmaumang.anti_peculator.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,15 +15,18 @@ import android.widget.Toast;
 
 import com.alimuzaffar.lib.pin.PinEntryEditText;
 import com.example.antitheft.R;
-import com.example.antitheft.activity.MechanicDetails;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskExecutors;
 import com.google.firebase.FirebaseException;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.sharmaumang.anti_peculator.activity.MechanicDetails;
 
 import java.util.concurrent.TimeUnit;
 //verifying user by contact number
@@ -115,15 +118,18 @@ public class VerifyFragment extends Fragment {
 
     private void signInWithCredential(PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
 
-                        String uid=mAuth.getCurrentUser().getUid();
-                        DatabaseReference reference;
-                        reference=FirebaseDatabase.getInstance().getReference();
-                        reference.child("Mechanic").child(uid).child("phone").setValue(phoneNumber);
-                        startActivity(new Intent(getContext(), MechanicDetails.class));
-                        getActivity().finish();
+                            String uid = mAuth.getCurrentUser().getUid();
+                            DatabaseReference reference;
+                            reference = FirebaseDatabase.getInstance().getReference();
+                            reference.child("Mechanic").child(uid).child("phone").setValue(phoneNumber);
+                            VerifyFragment.this.startActivity(new Intent(VerifyFragment.this.getContext(), MechanicDetails.class));
+                            VerifyFragment.this.getActivity().finish();
+                        }
                     }
                 });
     }

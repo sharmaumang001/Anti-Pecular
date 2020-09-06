@@ -19,8 +19,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.antitheft.R;
-import com.example.antitheft.model.Details;
 import com.google.android.material.card.MaterialCardView;
+import com.sharmaumang.anti_peculator.model.Details;
 
 import java.util.ArrayList;
 import java.util.List;
